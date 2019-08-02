@@ -191,8 +191,6 @@ SMT_20_STRING_TOKENS = [
     (r'RegexInter',     make_re_inter),
 
     # unique
-    (r'Indexof',     make_indexof_2_args),
-    (r'IndexOf',     make_indexof_2_args),
     (r'RegexDigit',  make_sym),
     (r'LastIndexOf', make_sym),
     (r'LastIndexof', make_sym),

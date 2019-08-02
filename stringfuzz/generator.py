@@ -130,13 +130,13 @@ def generate_expr(e, language):
         else:
             raise NotSupported(e, language)
 
-    elif isinstance(e, IndexOfNode):
-        if language == SMT_20_STRING:
-            components.append('IndexOf')
-        elif language == SMT_25_STRING:
-            components.append('str.indexof')
-        else:
-            raise NotSupported(e, language)
+    # elif isinstance(e, IndexOfNode):
+    #     if language == SMT_20_STRING:
+    #         components.append('IndexOf')
+    #     elif language == SMT_25_STRING:
+    #         components.append('str.indexof')
+    #     else:
+    #         raise NotSupported(e, language)
 
     elif isinstance(e, IndexOf2Node):
         if language == SMT_20_STRING:
